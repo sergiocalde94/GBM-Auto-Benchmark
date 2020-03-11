@@ -1,8 +1,10 @@
-# GBM Auto Benchmark (Binary Classification Problems)
+# GBM Auto Benchmark (Binary Classification Problems) :v:
 
 Gradient boosting machine algorithms that are fighting for Kaggle's throne, which one will win?
 
 ![Fight!](https://media.giphy.com/media/4IFOwmDGktcsM/source.gif)
+
+[Here](https://young-woodland-31029.herokuapp.com/) is the link to the app, deployed with [Heroku](https://young-woodland-31029.herokuapp.com/). The host plan is the free one and application weighs little more than 300 MB, so it can run slow, patience please :blush:. If you can it's better that you clone the repo and run it locally.
 
 # Installation
 

@@ -72,8 +72,6 @@ DATASET_NA_VALUES = config['DATA']['na_values']
 TEST_SIZE = config['MODEL'].getfloat('test_size_proportion')
 RANDOM_SEED = config['MODEL'].getint('random_seed')
 
-FILLNA = 'UNKNOWN'
-
 df = read_dataset(DATASET_PATH,
                   sep=DATASET_SEP,
                   na_values=DATASET_NA_VALUES,
@@ -238,10 +236,11 @@ else:
 
         st.markdown('## Let´s interpret the results :cop:')
         max_value = len(X_train_imputed_encoded.columns)
+
         num_features_to_show = (
             st.slider('How much important features you want to zoom in?',
                       min_value=1,
-                      max_value=min(max_value, 20),
+                      max_value=min(max_value + 1, 20),
                       value=min(5, max_value))
         )
 
